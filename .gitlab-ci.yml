@@ -1,0 +1,14 @@
+stages:
+  - compile
+  - test
+
+compile-code-job:
+  stage: compile
+  script:
+    - mvn clean compile
+
+test-code-job:
+  stage: test
+  script:
+    - mvn test
+
